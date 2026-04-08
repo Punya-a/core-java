@@ -1,34 +1,65 @@
-class Television{
+class Television {
+    String brand;
+    String model;
+    String type;
+    int size;
+    int channels;
+    double price;
+    boolean smartTV;
+    boolean wifi;
+    int power;
+    String resolution;
 
-    static String brandName="Samsung";
-    static float price=45000.76f;
+    static String category = "Electronics";
+    static String country = "India";
 
-    public static void getTelevision(){
+    public boolean powerOn(boolean status) {
+        System.out.println("TV On: " + status);
+        return status;
+    }
 
-       System.out.println("the brand name is:"+ brandName);
+    public boolean powerOff(boolean status) {
+        System.out.println("TV Off: " + status);
+        return status;
+        }
 
-} 
- public static void getTelevisionDetails(String brandName){
+    public int changeChannel(int ch) {
+        System.out.println("Channel: " + ch);
+        return ch;
+    }
 
-       System.out.println("the brand name is:"+ brandName);
+    public int increaseVolume(int vol) {
+        System.out.println("Volume: " + vol);
+        return vol;
+    }
 
-} 
- public static String getTelevisionDetail(String brandName){
+    public boolean connectWifi(boolean status) {
+        System.out.println("WiFi: " + status);
+        return status;
+    }
 
-       System.out.println("the brand name is:"+ brandName);
-   
-      return brandName;
+    public String openApp(String app) {
+        System.out.println("App: " + app);
+        return app;
+    }
 
-} 
+    public boolean playVideo(boolean status) {
+        System.out.println("Playing video: " + status);
+        return status;
+    }
 
- public static String televisionDetail(){
+    public boolean mute(boolean status) {
+        System.out.println("Mute: " + status);
+        return status;
+    }
 
-       System.out.println("the brand name is:"+ brandName);
-   
-      return brandName;
+    public boolean adjustBrightness(boolean status) {
+        System.out.println("Brightness adjusted: " + status);
+        return status;
+    }
 
-} 
-
-
-
+    public boolean switchInput(boolean status) {
+        System.out.println("Input switched: " + status);
+        return status;
+    }
 }
